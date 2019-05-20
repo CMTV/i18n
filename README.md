@@ -8,7 +8,7 @@ Open `manifest.json` file in `Packages` folder inside your Unity project root.
 
 It will look like that:
 
-```json
+```
 {
   "dependencies": {
     ...,
@@ -21,12 +21,12 @@ It will look like that:
 Add the following line to top of dependencies list:
 
 ```json
-"com.cmtv.i18n": "https://github.com/CMTV/unity-i18n.git",
+"com.cmtv.i18n": "https://github.com/CMTV/unity-i18n.git"
 ```
 
 The result should look like this:
 
-```json
+```
 {
   "dependencies": {
     "com.cmtv.i18n": "https://github.com/CMTV/unity-i18n.git",
