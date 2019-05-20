@@ -165,6 +165,16 @@ namespace I18n
             return Instance.currentLang.GetPhrase(id);
         }
 
+        public static string Phrase(string id, Dictionary<string, string> phraseParams)
+        {
+            if (Instance.currentLang == null)
+            {
+                return id;
+            }
+
+            return Instance.currentLang.GetPhrase(id, phraseParams);
+        }
+
         public static LanguageInfo[] GetLangs()
         {
             return Instance.langs.Select(language => language.Info).ToArray();

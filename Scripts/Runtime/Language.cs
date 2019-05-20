@@ -52,7 +52,7 @@ namespace I18n
 
             foreach (var param in phraseParams)
             {
-                text.Replace("{" + param.Key + "}", param.Value);
+                text = text.Replace("{" + param.Key + "}", param.Value);
             }
 
             return text;

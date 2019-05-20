@@ -7,7 +7,7 @@ namespace I18n
     [RequireComponent(typeof(Text))]
     public class LangText : MonoBehaviour 
     {
-        public bool updateOnLangChange;
+        public bool updateOnLangChange = true;
 
         string phraseId;
 
