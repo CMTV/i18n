@@ -1,0 +1,156 @@
+/* Header */
+
+.i18n-phrase--header
+{
+    justify-content: space-between;
+    padding: 0 5px;
+
+    border-width: 1px 1px 0;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.i18n-phrase--id
+{
+    flex: 1;
+}
+
+.i18n-phrase--id TextInput
+{
+    top: -1px;
+    background-image: none;
+}
+
+.i18n-phrase--menu
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Body */
+
+.i18n-phrase--body
+{
+    padding: 6px;
+    background-image: none;
+    background-color: #DEDEDE;
+
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 3px 3px;
+}
+
+.i18n-phrase--text TextInput
+{
+    background-image: none;
+}
+
+/* Footer */
+
+.i18n-phrase--footer
+{
+    border-top-width: 1px;
+    border-color: #A7A7A7;
+
+    margin-top: 5px;
+    padding-top: 5px;
+
+    background-image: none;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.i18n-phrase--message
+{
+    flex: 1;
+    color: #C03C3C;
+    white-space: normal;
+}
+
+.i18n-phrase--actions
+{
+    flex-direction: row;
+}
+
+.i18n-phrase--apply
+{
+    width: 60px;
+    margin-left: 5px;
+}
+
+/* State - Normal */
+
+.i18n-phraseState--normal .i18n-phrase--header,
+.i18n-phraseState--normal .i18n-phrase--body
+{
+    border-color: #A7A7A7;
+}
+
+.i18n-phraseState--normal .i18n-phrase--footer
+{
+    display: none;
+}
+
+/* State - Edit */
+
+.i18n-phraseState--edit .i18n-phrase--header,
+.i18n-phraseState--edit .i18n-phrase--body
+{
+    border-color: #3C76C0;
+}
+
+.i18n-phraseState--edit .i18n-phrase--menu
+{
+    display: none;
+}
+
+.i18n-phraseState--edit .i18n-phrase--header
+{
+    height: 25px;
+    align-items: center;
+}
+
+.i18n-phraseState--edit .i18n-phrase--id TextInput
+{
+    top: 0;
+}
+
+.i18n-phraseState--edit .i18n-phrase--id TextInput,
+.i18n-phraseState--edit .i18n-phrase--text TextInput
+{
+    margin: 1px;
+    background-color: #F3F3F3;
+    border-width: 1px;
+    border-color: #CECECE;
+}
+
+.i18n-phraseState--edit .i18n-phrase--message
+{
+    visibility: hidden;
+}
+
+/* State - Add */
+
+.i18n-phraseState--add .i18n-phrase--header,
+.i18n-phraseState--add .i18n-phrase--body
+{
+    border-color: #43C03C;
+}
+
+.i18n-phraseState--add .i18n-phrase--message
+{
+    visibility: hidden;
+}
+
+/* State - Error */
+
+.i18n-phraseState--error .i18n-phrase--header,
+.i18n-phraseState--error .i18n-phrase--body
+{
+    border-color: #C03C3C;
+}
+
+.i18n-phraseState--error .i18n-phrase--message
+{
+    visibility: visible;
+}

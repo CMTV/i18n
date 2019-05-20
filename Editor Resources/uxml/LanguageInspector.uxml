@@ -1,0 +1,13 @@
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement class="language-info">
+        <Label class="header" text="Information" />
+
+        <Box>
+            <TextField name="code" label="Code" />
+            <TextField name="name" label="Name" />
+            <Toggle name="is-default" label="Is default?" />
+        </Box>
+    </VisualElement>
+
+    <Button name="open" text="Open in Translator" />
+</UXML>

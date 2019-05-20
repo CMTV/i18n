@@ -1,0 +1,19 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <uie:Toolbar class="i18n-phrase--header">
+        <TextField tooltip="Phrase ID" class="i18n-phrase--id" />
+        <uie:ToolbarMenu class="i18n-phrase--menu" />
+    </uie:Toolbar>
+
+    <Box class="i18n-phrase--body">
+        <TextField tooltip="Phrase text" multiline="true" class="i18n-phrase--text" />
+
+        <Box class="i18n-phrase--footer">
+            <Label text="Test error message" class="i18n-phrase--message" />
+
+            <VisualElement class="i18n-phrase--actions">
+                <Button class="i18n-phrase--cancel" text="×" />
+                <Button class="i18n-phrase--apply" text="Apply" />
+            </VisualElement>
+        </Box>
+    </Box>
+</UXML>

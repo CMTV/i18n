@@ -1,0 +1,61 @@
+/* No language */
+
+.no-lang
+{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-lang Button
+{
+    margin-top: 10px;
+    width: 150px;
+}
+
+/* Has language */
+
+.header
+{
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.header .actions
+{
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.header .actions ToolbarButton
+{
+    margin-left: 5px;
+}
+
+#search
+{
+    margin-left: 20px;
+}
+
+#search .unity-toolbar-search-field__search-button
+{
+    flex-shrink: 1;
+}
+
+#search TextField
+{
+    flex: 1;
+
+    max-width: 300px;
+    min-width: 75px;
+}
+
+#phrase-container
+{
+    margin: 10px;
+}
+
+#phrase-container Phrase
+{
+    margin-bottom: 10px;
+}

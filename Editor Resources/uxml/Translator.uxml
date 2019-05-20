@@ -1,0 +1,14 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <uie:Toolbar class="header">
+        <VisualElement class="actions">
+            <uie:ToolbarButton name="lang-switcher" tooltip="Change language..." />
+            <uie:ToolbarButton name="add-phrase" text="Add phrase" />
+        </VisualElement>
+        
+        <uie:ToolbarPopupSearchField name="search" />
+    </uie:Toolbar>
+
+    <ScrollView>
+        <VisualElement name="phrase-container"></VisualElement>
+    </ScrollView>
+</UXML>
