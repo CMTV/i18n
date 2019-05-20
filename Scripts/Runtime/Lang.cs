@@ -18,6 +18,8 @@ namespace I18n
         Language currentLang;
         string currentLangCode;
 
+        public static Language Current => Instance.currentLang;
+
         #region Singleton
 
         static Lang _instance;
@@ -161,7 +163,7 @@ namespace I18n
             {
                 return id;
             }
-
+            
             return Instance.currentLang.GetPhrase(id);
         }
 
