@@ -7,6 +7,8 @@ namespace I18n
     [CreateAssetMenu(fileName = "New Language", menuName = "I18n/Language", order = 0)]
     public class Language : ScriptableObject 
     {
+        #pragma warning disable 649
+
         [SerializeField]
         bool isDefault;
 
@@ -15,6 +17,8 @@ namespace I18n
 
         [SerializeField]
         List<Phrase> phrases;
+
+        #pragma warning restore 649
 
         public bool IsDefault => isDefault;
 
