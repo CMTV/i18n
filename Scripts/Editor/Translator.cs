@@ -53,10 +53,11 @@ namespace I18n.EditorUtilities
         [MenuItem("Window/Translator")]
         public static Translator ShowWindow()
         {
+            var icon = AssetDatabase.LoadAssetAtPath<Texture>(Path.Texture("Translator Icon.png"));
+
             var window = GetWindow<Translator>();
-            window.titleContent = new GUIContent("Translator");
+            window.titleContent = new GUIContent("Translator", icon);
             window.minSize = new Vector2(300, 300);
-            window.Show();
 
             return window;
         }
