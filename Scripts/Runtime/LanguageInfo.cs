@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace I18n
+namespace CMTV.I18n
 {
     [Serializable]
     public struct LanguageInfo

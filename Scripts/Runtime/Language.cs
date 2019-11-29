@@ -2,7 +2,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace I18n
+namespace CMTV.I18n
 {
     [CreateAssetMenu(fileName = "New Language", menuName = "I18n/Language", order = 0)]
     public class Language : ScriptableObject 

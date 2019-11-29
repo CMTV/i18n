@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.4
+
+* **New package namespace: `CMTV.I18n`**
+* `Switch` method of `Language` class now has `public static` modifiers
+
 ## 1.0.3
 
 * "Unity" in both assembly filenames replaced with "CMTV"

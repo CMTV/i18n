@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine.UIElements;
 
-namespace I18n.EditorUtilities
+namespace CMTV.I18n.EditorUtilities
 {
     [CustomEditor(typeof(Language))]
     public class LanguageInspector : Editor

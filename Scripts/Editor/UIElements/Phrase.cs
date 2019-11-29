@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 
-namespace I18n.EditorUtilities.UIElements
+namespace CMTV.I18n.EditorUtilities.UIElements
 {
     public class Phrase : VisualElement
     {

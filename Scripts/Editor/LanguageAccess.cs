@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEditor;
 
-namespace I18n.EditorUtilities
+namespace CMTV.I18n.EditorUtilities
 {
     public class LanguageAccess
     {

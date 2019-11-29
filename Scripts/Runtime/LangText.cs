@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace I18n
+namespace CMTV.I18n
 {
     [AddComponentMenu("UI/Language Text")]
     [RequireComponent(typeof(Text))]

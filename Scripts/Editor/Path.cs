@@ -1,4 +1,4 @@
-namespace I18n.EditorUtilities
+namespace CMTV.I18n.EditorUtilities
 {
     public class Path
     {

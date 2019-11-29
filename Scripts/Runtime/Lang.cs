@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace I18n
+namespace CMTV.I18n
 {
     public class Lang : MonoBehaviour
     {
@@ -107,13 +107,6 @@ namespace I18n
             return null;
         }
 
-        void Switch(string code)
-        {
-            currentLang = GetLang(code);
-            onLanguageSwitch.Invoke();
-            SaveCurrent();
-        }
-
         #region Save and Load current language
 
         void SaveCurrent()
@@ -155,6 +148,13 @@ namespace I18n
 
         #endregion
     
+        public static void Switch(string code)
+        {
+            Instance.currentLang = Instance.GetLang(code);
+            Instance.onLanguageSwitch.Invoke();
+            Instance.SaveCurrent();
+        }
+
         public static string Phrase(string id)
         {
             if (Instance.currentLang == null)

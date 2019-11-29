@@ -5,9 +5,8 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
-using I18n.EditorUtilities.UIElements;
 
-namespace I18n.EditorUtilities
+namespace CMTV.I18n.EditorUtilities
 {
     public class Translator : EditorWindow 
     {
