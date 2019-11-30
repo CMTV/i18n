@@ -162,15 +162,7 @@ namespace CMTV.I18n
             Instance.currentLang = Instance.GetLang(code);
             Instance.currentLangCode = Instance.currentLang.Info.Code;
 
-            try
-            {
-                Instance.onLanguageSwitch.Invoke();
-            }
-            catch
-            {
-                Debug.LogWarning("Problems when invoking 'onLanuageSwitch'!");
-            }
-            
+            Instance.onLanguageSwitch.Invoke();
             
             Instance.SaveCurrent();
         }

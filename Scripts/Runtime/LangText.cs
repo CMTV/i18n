@@ -33,7 +33,14 @@ namespace CMTV.I18n
 
         public void UpdateText()
         {
-            Text.text = Lang.Phrase(phraseId);
+            try
+            {
+                Text.text = Lang.Phrase(phraseId);
+            }
+            catch
+            {
+                Debug.LogWarning("Can't update Text!");
+            }
         }
     }   
 }
