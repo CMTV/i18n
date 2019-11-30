@@ -160,6 +160,7 @@ namespace CMTV.I18n
         public static void Switch(string code)
         {
             Instance.currentLang = Instance.GetLang(code);
+            Instance.currentLangCode = Instance.currentLang.Info.Code;
 
             try
             {
