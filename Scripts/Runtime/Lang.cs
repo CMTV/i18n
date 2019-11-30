@@ -143,7 +143,16 @@ namespace CMTV.I18n
                 }
             }
 
-            currentLang = (currentLangCode == null) ? defaultLang : GetLang(currentLangCode);
+            if (currentLangCode == null || GetLang(currentLangCode) == null)
+            {
+                currentLangCode = defaultLang.Info.Code;
+                currentLang = defaultLang;
+                SaveCurrent();
+            }
+            else
+            {
+                currentLang = GetLang(currentLangCode);
+            }
         }
 
         #endregion
@@ -151,7 +160,17 @@ namespace CMTV.I18n
         public static void Switch(string code)
         {
             Instance.currentLang = Instance.GetLang(code);
-            Instance.onLanguageSwitch.Invoke();
+
+            try
+            {
+                Instance.onLanguageSwitch.Invoke();
+            }
+            catch
+            {
+                Debug.LogWarning("Problems when invoking 'onLanuageSwitch'!");
+            }
+            
+            
             Instance.SaveCurrent();
         }
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.5
+
+* Fixed some logic errors with Saving/Loading languages
+* Fixed an exception caused by invoking `onLanguageSwitch` on destroyed listeners
+
 ## 1.0.4
 
 * **New package namespace: `CMTV.I18n`**
